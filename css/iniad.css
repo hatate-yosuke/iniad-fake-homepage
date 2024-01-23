@@ -1,21 +1,22 @@
 body {
   background-color: #794c13;
   color: #FE4261;
+  font-size: 16px; /* 追加 */
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 36px; /* 修正 */
   text-align: center;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px; /* 修正 */
   color: #000000;
   border-bottom: solid 1px #cc0000;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px; /* 修正 */
   padding-left: 4px;
   border-left: solid 4px #cc0000;
 }
