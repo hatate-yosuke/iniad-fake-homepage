@@ -1,7 +1,8 @@
 body {
   background-color: #794c13;
   color: #FE4261;
-  font-size: 16px; /* 追加 */
+  font-size: 24px; /* 追加 */
+  padding-left: 36px; /* 追加 */
 }
 
 h1 {
@@ -34,4 +35,9 @@ h3 {
   font-weight: bold;
   color: #cc0000;
   font-size: 30px;
+}
+
+p {
+  max-width: 800px; /* 任意の最大幅を指定 *//* 追加 */
+  margin: 0 auto; /* 中央寄せ *//* 追加 */
 }
