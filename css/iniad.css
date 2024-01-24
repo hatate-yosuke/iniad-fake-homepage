@@ -1,5 +1,7 @@
 body {
-  background-color: #794c13;
+  background-color:rgba(253,255,255,0.6); /* 追加 */
+  background-blend-mode:lighten; /* 追加 */
+  background-size:cover; /* 追加 */
   color: #FE4261;
   font-size: 24px; /* 追加 */
   padding-left: 36px; /* 追加 */
