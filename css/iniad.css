@@ -1,5 +1,5 @@
 body {
-  background-color:rgba(253,255,255,0.6); /* 追加 */
+  background-color:rgba(253,255,255,0.8); /* 追加 */
   background-blend-mode:lighten; /* 追加 */
   background-size:cover; /* 追加 */
   color: #000000;
