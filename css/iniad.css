@@ -2,7 +2,7 @@ body {
   background-color:rgba(253,255,255,0.6); /* 追加 */
   background-blend-mode:lighten; /* 追加 */
   background-size:cover; /* 追加 */
-  color: #FE4261;
+  color: #000000;
   font-size: 24px; /* 追加 */
   padding-left: 36px; /* 追加 */
 }
@@ -30,7 +30,7 @@ h3 {
 }
 
 .iniad {
-  color: #00cc00;
+  color: #00BFFF;
 }
 
 .time {
