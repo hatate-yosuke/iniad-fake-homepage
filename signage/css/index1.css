@@ -1,0 +1,70 @@
+/* index1.css */
+
+/* タイトルの文字装飾 */
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-size: 6em;
+  line-height: 1.5;
+  font-weight: bold; /* 太くする */
+  opacity: 0;
+  animation: scaleAndFadeIn 1.5s ease-in-out forwards;
+}
+
+/* 画像のフェードインアニメーション */
+img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* h2, h3の文字装飾とアニメーション */
+h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 5em;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+/* h3のスタイル調整 */
+h3 {
+  margin: 0;
+}
+
+/* scaleAndFadeInアニメーション */
+@keyframes scaleAndFadeIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* fadeInアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* フッターのロゴのスタイル */
+footer img {
+  display: block;
+  margin: 0 auto;
+}
