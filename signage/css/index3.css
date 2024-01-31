@@ -4,10 +4,8 @@
 h1 {
     font-family: 'BIZ UDPGothic';
     color: #003366;
-    text-align: center;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     font-size: 5em;
-    line-height: 1.5;
     font-weight: bold; /* 太くする */
     opacity: 0;
     animation: scaleAndFadeIn 1.5s ease-in-out forwards;
@@ -29,57 +27,104 @@ h1:before {
     border: 4px solid #000;
   }
 
+/* 画像のフェードインアニメーション */
+img {
+  max-width: 100%;
+  animation: fadeUp 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
 
-  /* 画像のフェードインアニメーション */
-  img {
-    max-width: 100%;
-    animation: fadeUp 1.5s ease-in-out forwards;
-    animation-delay: 0.5s;
+
+/* scaleAndFadeInアニメーション */
+@keyframes scaleAndFadeIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.trial {
+  position: relative;
+  }
+
+.trial a {/*aタグを画像の真ん中に*/
+  position: absolute;
+  top: 70%;
+  left: 72%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+  /*以下装飾*/
+  margin:0;/*余計な隙間を除く*/
+  font-size: 20px;/*文字サイズ*/
+  border: solid gray 2px; /*線で囲う*/
+  padding: 7px;/*文字と線の間の余白*/
+  color: gray;/*文字色*/
+  text-decoration: none;/*下線を表示させない*/
+  }
+
+.trial a:hover{/*カーソルを当てたとき*/
+  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+  }
+
+.trial img {
+  width: 100%;
+  }
+
+trial {
+    position: relative;
+    }
+  
+.trial p {
+  font-family: 'BIZ UDPGothic';
+  color:whitesmoke;
+  font-size: 3em;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: rotate(-15deg);
+  margin:0;
+  padding:0;
   }
   
-  /* h2, h3の文字装飾とアニメーション */
-  h2, h3 {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    text-align: center;
-    font-size: 5em;
-    margin-top: 30px; /* 上に10pxの余白を追加 */
-    opacity: 0;
-    animation: fadeUp 1.5s ease-in-out forwards;
-    animation-delay: 2s;
+h2 {
+  font-family: 'BIZ UDPGothic';
+  font-size: 5em;
+  color: #003366;
   }
-  
-  /* h3のスタイル調整 */
-  h3 {
-    margin: 0;
+
+h2:first-letter {
+  font-size: 150%;
+  color: #eb6100;
   }
-  
-  /* scaleAndFadeInアニメーション */
-  @keyframes scaleAndFadeIn {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
+
+h2 {
+  position: relative;
+  padding: 1rem .5rem;
   }
-  
-  /* fadeInアニメーション */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
   }
-  
-  /* フッターのロゴのスタイル */
-  footer img {
-    display: block;
-    margin: 0 auto;
+
+/* フッターのロゴのスタイル */
+footer img {
+  display: block;
+  margin: 0 auto;
   }
