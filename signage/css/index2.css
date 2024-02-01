@@ -3,7 +3,7 @@
 
 h1 {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin: 80px 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -12,25 +12,26 @@ h1 {
     line-height: 1.5;
 }
 
-h2.lead {
+h2 {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin: 100px 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     font-size: 3em;
     font-weight: 180; 
-    line-height: 1.5;
+    line-height: 1.5;  
 }
+
+.container{
+    position: relative;
+  }
   
-h2.example {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    text-align: center;
-    margin: 180px 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    font-size: 4em;
-    font-weight: 180; 
-    line-height: 1.5;
+.container img{
+    width:100%;
+  }
+
+.container h1, h2 {
+    position: absolute; 
 }
 
