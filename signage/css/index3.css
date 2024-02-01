@@ -49,11 +49,12 @@ img {
   }
 }
 
+/* 画像上への文字、リンク追加 */
 .trial {
   position: relative;
   }
 
-.trial a {/*aタグを画像の真ん中に*/
+.trial a {
   position: absolute;
   top: 70%;
   left: 72%;
@@ -61,26 +62,22 @@ img {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 
-  /*以下装飾*/
-  margin:0;/*余計な隙間を除く*/
-  font-size: 20px;/*文字サイズ*/
-  border: solid gray 2px; /*線で囲う*/
-  padding: 7px;/*文字と線の間の余白*/
-  color: gray;/*文字色*/
-  text-decoration: none;/*下線を表示させない*/
+ 
+  margin:0;
+  font-size: 20px;
+  border: solid gray 2px; 
+  padding: 7px;
+  color: gray;
+  text-decoration: none;
   }
 
-.trial a:hover{/*カーソルを当てたとき*/
-  background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+.trial a:hover{
+  background: rgba(255, 255, 255, 0.3);
   }
 
 .trial img {
   width: 100%;
   }
-
-trial {
-    position: relative;
-    }
   
 .trial p {
   font-family: 'BIZ UDPGothic';
@@ -93,7 +90,8 @@ trial {
   margin:0;
   padding:0;
   }
-  
+
+/* 画面下部の文字装飾 */
 h2 {
   font-family: 'BIZ UDPGothic';
   font-size: 3em;
