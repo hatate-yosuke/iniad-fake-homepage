@@ -2,30 +2,30 @@
 
 /* タイトルの文字装飾 */
 h1 {
-    font-family: 'BIZ UDPGothic';
-    color: #003366;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    font-size: 5em;
-    font-weight: bold; /* 太くする */
-    opacity: 0;
-    animation: scaleAndFadeIn 1.5s ease-in-out forwards;
-  }
-  
+  font-family: 'BIZ UDPGothic';
+  color: #003366;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  font-size: 5em;
+  font-weight: bold;
+  opacity: 0;
+  animation: scaleAndFadeIn 1.5s ease-in-out forwards;
+}
+
 h1 {
-    position: relative;
-    padding: 1rem 2rem calc(1rem + 10px);
-    background: #E6FFE9;
-  }
-  
+  position: relative;
+  padding: 1rem 2rem calc(1rem + 10px);
+  background: #E6FFE9;
+}
+
 h1:before {
-    position: absolute;
-    top: -7px;
-    left: -7px;
-    width: 100%;
-    height: 100%;
-    content: '';
-    border: 4px solid #000;
-  }
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid #000;
+}
 
 /* 画像のフェードインアニメーション */
 img {
@@ -33,7 +33,6 @@ img {
   animation: fadeUp 1.5s ease-in-out forwards;
   animation-delay: 0.5s;
 }
-
 
 /* scaleAndFadeInアニメーション */
 @keyframes scaleAndFadeIn {
@@ -52,61 +51,104 @@ img {
 /* 画像上への文字、リンク追加 */
 .trial {
   position: relative;
-  }
+}
 
 .trial a {
   position: absolute;
   top: 70%;
   left: 72%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-
- 
-  margin:0;
+  transform: translate(-50%, -50%);
+  margin: 0;
   font-size: 20px;
-  border: solid gray 2px; 
+  border: solid gray 2px;
   padding: 7px;
   color: gray;
   text-decoration: none;
-  }
+}
 
-.trial a:hover{
+.trial a:hover {
   background: rgba(255, 255, 255, 0.3);
-  }
+}
 
 .trial img {
   width: 100%;
-  }
-  
+}
+
 .trial p {
   font-family: 'BIZ UDPGothic';
-  color:whitesmoke;
+  color: whitesmoke;
   font-size: 3em;
   position: absolute;
-  top: 20%;
+  top: 10%; /* 上方向に調整 */
   left: 10%;
   transform: rotate(-15deg);
-  margin:0;
-  padding:0;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* QRコードの表示領域を制限 */
+.qr-container {
+  text-align: center;
+}
+
+/* QRコードの画像サイズを半分にする */
+.qr-code {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Follow Meボタンをフェードイン表示 */
+.follow-button {
+  position: absolute;
+  top: 70%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 20px;
+  border: solid gray 2px;
+  padding: 7px;
+  color: gray;
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeUp 1.5s ease-in-out forwards;
+  animation-delay: 1s; /* 適切な遅延時間を設定 */
+}
+
+.follow-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 /* 画面下部の文字装飾 */
 h2 {
   font-family: 'BIZ UDPGothic';
   font-size: 3em;
   color: #003366;
+  opacity: 0;
+  transform: translateY(50px); /* 初期位置を下方向に設定 */
+  animation: slideAndFadeIn 1.5s ease-in-out forwards;
+}
+
+/* スライドインのアニメーション */
+@keyframes slideAndFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 h2:first-letter {
   font-size: 130%;
   color: #eb6100;
-  }
+}
 
 h2 {
   position: relative;
   padding: 1rem .5rem;
-  }
+}
 
 h2:after {
   position: absolute;
@@ -116,13 +158,19 @@ h2:after {
   height: 6px;
   content: '';
   border-radius: 3px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#2af598), to(#009efd));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#2af598),
+    to(#009efd)
+  );
   background-image: -webkit-linear-gradient(right, #2af598 0%, #009efd 100%);
   background-image: linear-gradient(to left, #2af598 0%, #009efd 100%);
-  }
+}
 
 /* フッターのロゴのスタイル */
 footer img {
   display: block;
   margin: 0 auto;
-  }
+}
