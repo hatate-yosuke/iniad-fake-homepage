@@ -20,7 +20,7 @@ h2.lead {
     margin: 300px 90px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     font-size: 2.8em;
-    font-weight: 180; 
+    font-weight: 200; 
     line-height: 1.5;  
 }
 
@@ -31,7 +31,7 @@ h2.example {
     margin: 550px 130px; 
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); 
     font-size: 4em; 
-    font-weight: 180;  
+    font-weight: 200;  
     line-height: 1.5;
     position: absolute; 
     } 
@@ -39,7 +39,8 @@ h2.example {
 
 .container img{
     width:100%;    
-    margin:0px 0px 0px -30px;
+    margin:0px 0px 0px;
+    padding: 0px;
   }
 
 h1,h2 {
