@@ -37,11 +37,11 @@ h2.example {
     } 
 
 
-.container img{
-    width:1080px; 
-    height:1920px;   
-    margin:0px;
-    padding: 0px;
+    .container img{
+      width:100%;
+      height:auto;
+      margin:0;
+      padding: 0;
   }
 
 h1,h2 {
