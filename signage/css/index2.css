@@ -38,8 +38,9 @@ h2.example {
 
 
 .container img{
-    width:100%;    
-    margin:0px 0px 0px;
+    width:1080px; 
+    height:1920px;   
+    margin:0px;
     padding: 0px;
   }
 
