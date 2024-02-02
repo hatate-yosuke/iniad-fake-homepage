@@ -36,11 +36,18 @@ h2.example {
     position: absolute; 
     } 
 
-    .container img{
-      max-width: 100%;
+.contents {
+    background-color: #3c3c3c;
+    overflow:hidden;
+    vertical-align:bottom;
+    line-height:0;
+　　}
+
+.container img{
       height: auto;
-      margin:0;
+      margin: 0 auto;
       padding: 0;
+      display: block;
   }
 
 h1,h2 {
